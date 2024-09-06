@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased] - YYYY-MM-DD
+
+## [1.13] - 2024-08-30
+### Changes
+- Update Nginx to 1.26.2
+
+## [1.12] - 2024-06-06
+### Changes
+- Update Nginx to 1.26.1
+
+## [1.11] - 2024-05-29
+### Changes
+- [heroku-18] Removed
+- Add documentation for migrating from heroku-community/static buildpack
+- Link against system libpcre3
+- Link against system zlib
+- Update nginx to 1.26.0
+- Update headers-more-nginx-module to 0.37
+- Update ruby to 3.2.4
+- Support heroku-24
+- Use PCRE2 on heroku-24 and newer
+
 ## [1.10] - 2023-06-13
 ### Changes
 - New "Static site" preset config

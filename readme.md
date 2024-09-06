@@ -7,7 +7,7 @@ Nginx-buildpack installs & runs the [Nginx web server](https://nginx.org/) insid
 * Presets for specific use-cases
 	- [Static sites](static.md)
 	- [Local proxy to app servers](proxy.md)
-* Complete control of Nginx config in `config/nginx.erb.conf`
+* Complete control of Nginx config in `config/nginx.conf.erb`
 	- [`erb` template](https://github.com/ruby/erb) supports dynamic config at start-up
 	- see [Nginx docs](https://nginx.org/en/docs/)
 * writes [Heroku request ids](https://devcenter.heroku.com/articles/http-request-id) & server timing to access logs
@@ -17,11 +17,11 @@ Nginx-buildpack installs & runs the [Nginx web server](https://nginx.org/) insid
 
 These are auto-selected based on the app's stack at build time.
 
-| Heroku Stack | Nginx Version |
-|--------------|--------------:|
-| `Heroku-18` | `1.25.1` |
-| `Heroku-20` | `1.25.1` |
-| `Heroku-22` | `1.25.1` |
+| Heroku Stack | Nginx Version | PCRE version |
+|--------------|--------------:|-------------:|
+| `Heroku-20` | `1.26.2` | PCRE1 (8.x) |
+| `Heroku-22` | `1.26.2` | PCRE1 (8.x) |
+| `Heroku-24` | `1.26.2` | PCRE2 (10.x) |
 
 ## Presets
 
@@ -39,7 +39,7 @@ _Proxy is the original buildpack mode that is enabled by default, if the `config
 
 ### Solo mode (deprecated)
 
-This mode has been superceeded by [Static mode](static.md). 
+This mode has been superceeded by [Static mode](static.md).
 
 ## Custom Nginx usage
 
